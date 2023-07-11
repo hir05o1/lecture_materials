@@ -15,7 +15,7 @@
 
 ## Homebrewのインストール
 [Homebrew](https://brew.sh/index_ja)はmacOS（またはLinux）でモジュール（プログラムの部品）を管理するためのパッケージマネージャーです。  
-公式サイトのインストール部分にあるコマンドをコピーしてターミナルに貼り付けて実行してください。  
+公式サイトのインストール部分にあるコマンドをコピーしてターミナルに貼り付けて実行してください。管理者権限を持たないユーザーの場合はこのコマンドを実行できません。そのユーザーに管理者権限を与えてください。  
 ![Alt text](sources/images/yarn_installation_for_mac/homebrew_homepage.png)
 `Checking for sudo access ~~~`と`Password:🔑`が表示されたらパスワードを入力してください。
 ![Alt text](sources/images/yarn_installation_for_mac/homebrew_install_password.png)
@@ -29,25 +29,25 @@ pathを通すとは[このページを見てください](https://qiita.com/sta/
 画像の部分をコピーしてターミナルにペーストして実行してください。  
 パスを通した設定を適用させるためにターミナルを終了させてください。（パスを通したことを記述したファイルがターミナル起動時に読み込まれるため）
 `brew -v`を実行しバージョン番号が出たら成功です。
-![Alt text](sources/images/yarn_installation_for_mac/brew_version.png)
+![Alt text](sources/images/yarn_installation_for_mac/brew_version.png)  
 
-`/usr/local/bin`が表示されたら成功です。？
-別の場所（/user/ユーザネームの下の任意のディレクトリ）で`brew -v`を実行しバージョン番号が出たら成功です。？
+`/usr/local/bin`が表示されたら成功です。？  
+別の場所（/user/ユーザネームの下の任意のディレクトリ）で`brew -v`を実行しバージョン番号が出たら成功です。？  
 
 ## nodebrewのインストール
 [nodebrew](https://github.com/hokaccha/nodebrew)はNode.jsのバージョン管理ツールです。  
 ターミナルで`brew install nodebrew`を実行してください。  
-![Alt text](sources/images/yarn_installation_for_mac/node_install.png)
+![Alt text](sources/images/yarn_installation_for_mac/brew_install_nodebrew.png)
 次に`nodebrew setup`を実行。色々出ます
 ![Alt text](sources/images/yarn_installation_for_mac/nodebrew_setup.png)
-パスを通すために`echo 'export PATH=$HOME/.nodebrew/current/bin:$PATH' >> ~/.zshrc`を実行してください。
+パスを通すために`echo 'export PATH=$HOME/.nodebrew/current/bin:$PATH' >> ~/.zshrc`を実行してください。(上画像下から3行目)  
 パスを通す設定を適用するために`source ~/.zshrc`を実行してください。
 
 ## node.jsのインストール
 [Node.js]()はJavaScriptをサーバーサイドで実行するためのプラットフォームです。
 ターミナルで`nodebrew install-binary stable`を実行してください、node.jsがインストールされます。
 ![Alt text](sources/images/yarn_installation_for_mac/nodebrew_install_stable.png)
-`nodebrew ls`でインストールしたnode.jsのバージョンを確認し、`nodebrew use 確認したバージョン`でnode.jsを有効化してください。  
+`nodebrew ls`実行でインストールしたnode.jsのバージョンを確認し、`nodebrew use 確認したバージョン`実行でnode.jsを有効化してください。  
 例：`nodebrew use v12.16.1`
 
 ここでインストールの確認をします。
