@@ -1,5 +1,8 @@
 # yarnのインストール（Mac版）
-流れは以下の通りです。
+- 2023/07/11作成。
+- ターミナルは現在のデフォルトの`zsh`を想定しています。bashの場合はzshを使用するか適宜bashに読み替えてください。  
+
+## 流れは以下の通りです。
 1. Homebrewのインストール
 2. nodebrewのインストール
 3. yarnのインストール
@@ -61,6 +64,9 @@ pathを通すとは[このページを見てください](https://qiita.com/sta/
 ![Alt text](sources/images/yarn_installation_for_mac/yarn_install.png)
 その後、`yarn -v`を実行してバージョン番号が表示されたら成功です。
 ![Alt text](sources/images/yarn_installation_for_mac/yarn_version.png)
+
+## リポジトリをクローンしたあと
+リポジトリをターミナルで開いて`yarn install`を`Are you interested in ~`が出たら`n`。（適宜内容を確認してください。）
 
 ## 追記
 pathを通す設定が書かれているファイルは\user\ユーザーネームの中で隠しファイル(.zprofile)になっています。`command + shift + .`で隠しファイルの表示の切り替えができます。
